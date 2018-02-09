@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gran Juego de Numeros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Welcome to the Great Number Game!</h1>
+        <h2>I'm thinking of a number between 1 and 100!</h2>
+        <h3>Take a guess!</h3>
+        <% if (guess != '') {%>
+        <div id="<%= guess.class %>">
+            <h3 id="message"><%= guess.message %></h3>
+        </div>
+        <form action="/guess" method="POST">
+            <input type="number" id="numInput" name="guess">
+
+            <input type="submit" value="Submit" id="submitButton">
+        <% } %>
+        </form>
+    </div>
+</body>
+</html>

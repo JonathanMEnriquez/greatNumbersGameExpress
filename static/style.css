@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: green;
+}
+
+#wrapper {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#wrapper h1 {
+    margin-bottom: 10px;
+}
+
+#wrapper h2 {
+    margin: 10px;
+}
+
+#numInput {
+    background-color: white;
+    font-size: 16px;
+    height: 18px;
+}
+
+#submitButton {
+    background-color: white;
+    color: green;
+    margin-top: 15px;
+}
+
+#failedGuess {
+    width: 24%;
+    height: 200px;
+    margin-left: 38%;
+    background-color: red;
+    text-align: center;
+}
+
+#failedGuess h3 {
+    color: white;
+    margin-top: 40%;
+    background-color: red;
+}
